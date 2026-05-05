@@ -1,0 +1,27 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: shortener-service
+  data:
+    cassandra:
+      contact-points: localhost
+      port: 9042
+      keyspace-name: url_shortener
+      local-datacenter: datacenter1
+    redis:
+      host: localhost
+      port: 6379
+  kafka:
+    bootstrap-servers: localhost:29092
+    producer:
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+      properties:
+        spring.json.add.type.headers: false
+
+rate-limit:
+  capacity: 10
+  tokens: 10
+  refill-rate: 1

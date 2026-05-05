@@ -1,0 +1,4 @@
+com\urlshortener\analyticsservice\config\CassandraCqlConfig.class
+com\urlshortener\analyticsservice\service\KafkaConsumerService.class
+com\urlshortener\analyticsservice\AnalyticsServiceApplication.class
+com\urlshortener\analyticsservice\controller\AnalyticsController.class

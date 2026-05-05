@@ -1,0 +1,3 @@
+com\urlshortener\apigateway\controller\GatewayController.class
+com\urlshortener\apigateway\router\ConsistentHashRouter.class
+com\urlshortener\apigateway\ApiGatewayApplication.class
